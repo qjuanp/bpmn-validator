@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "XDPL Validator";
+}
+
+<div class="jumbotron">
+    <h1>@ViewBag.Title</h1>
+    <p class="lead">Just select your *.xpdl file and hit Validate!</p>
+
+    <p>
+        @using (Html.BeginForm("Validate", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input type="file" name="XpdlFile" accept=".xpdl" />
+            <input type="submit" name="submint" class="btn btn-lg btn-success" title="Validate!" value="Validate!" />
+        }
+    </p>
+</div>
