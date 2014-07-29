@@ -40,7 +40,7 @@ BPMN Validator
 ![Class Diagram](./diagrams/uml_class_diagram.jpg)
 
 ##Used Frameworks
-- ASP.NET MVC 3
+- ASP.NET MVC 5
 - Linq to XML
 - Unity 3
 - Unity.Mvc5
