@@ -18,7 +18,7 @@ View live demo at: http://bpmn-validator.azurewebsites.net/
     - [X] Process XML
     - [ ] Update class diagram
     - [ ] Detect BPMN errors
-    - [ ] Detect Style errors
+    - [X] Detect Style errors
     - [ ] Test validation outputs
     - [ ] Integrate cooler file uploader
     - [ ] Implement better styles for results
@@ -35,7 +35,7 @@ View live demo at: http://bpmn-validator.azurewebsites.net/
 - [X] Style 0115.  A throwing intermediate event should be labeled. [1][1]
 - [X] Style 0122.  A catching Message event should have incoming message flow.[1][1]
 - [X] Style 0123.  A throwing Message event should have outgoing message flow.[1][1]
-- [ ] BPMN 0102.  All flow objects other than end events and compensating activities must have an outgoing sequence flow, if the process level includes any start or end events.[1][1]
+- [X] BPMN 0102.  All flow objects other than end events and compensating activities must have an outgoing sequence flow, if the process level includes any start or end events.[1][1]
 
 ##Static Design
 ![Class Diagram](./diagrams/uml_class_diagram.jpg)
@@ -53,6 +53,7 @@ View live demo at: http://bpmn-validator.azurewebsites.net/
 ##Used code
 - [Find duplicates with Linq][http://blogs.msdn.com/b/ericwhite/archive/2008/08/19/find-duplicates-using-linq.aspx]
 - [Get the XPath to an XElement?][http://stackoverflow.com/a/454597]
+- [Left Outer Join][http://msdn.microsoft.com/en-US/vstudio/ee908647.aspx#leftouterjoin]
 
 ##Continuous Delivery
 Integration between Azure and GitHub

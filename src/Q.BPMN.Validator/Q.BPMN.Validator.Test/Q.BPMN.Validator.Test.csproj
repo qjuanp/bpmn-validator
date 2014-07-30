@@ -63,6 +63,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Handlers\BPMN0102Test.cs" />
     <Compile Include="Handlers\Style0104Test.cs" />
     <Compile Include="Handlers\Style0115Test.cs" />
     <Compile Include="Handlers\Style0122Test.cs" />
