@@ -10,7 +10,7 @@ namespace Q.BPMN.Validator.Models
     public class ValidationError
     {
         public string Message { get; set; }
-        public int Id { get; set; }
+        public string Id { get; set; }
         public ValidationType Type { get; set; }
         public Guid ElementId { get; set; }
         public string ElementName { get; set; }

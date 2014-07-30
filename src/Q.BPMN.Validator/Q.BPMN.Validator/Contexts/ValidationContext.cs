@@ -10,13 +10,12 @@ namespace Q.BPMN.Validator.Contexts
 {
     public class ValidationContext : Context
     {
-        public bool IsValid { get; set; }
+        public bool IsValid { get { return Errors.Count == 0; } }
         public IList<ValidationError> Errors { get; set; }
 
         public ValidationContext(string fileName, XDocument document)
             : base(fileName, document)
         {
-            IsValid = false;
             Errors = new List<ValidationError>();
         }
     }

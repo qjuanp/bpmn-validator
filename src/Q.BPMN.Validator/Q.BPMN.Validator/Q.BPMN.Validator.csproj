@@ -54,6 +54,7 @@
     <Compile Include="Contexts\ValidationContext.cs" />
     <Compile Include="Enums\ValidationType.cs" />
     <Compile Include="Enums\XPDLDefinition.cs" />
+    <Compile Include="Extensions\XExtensions.cs" />
     <Compile Include="Handlers\BPMN0102.cs" />
     <Compile Include="Handlers\Style0104.cs" />
     <Compile Include="Handlers\Style0115.cs" />

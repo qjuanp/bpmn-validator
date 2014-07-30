@@ -63,6 +63,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Handlers\Style0104Test.cs" />
+    <Compile Include="Handlers\Style0115Test.cs" />
     <Compile Include="ProcessModelTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XpdlValidatorTest.cs" />
