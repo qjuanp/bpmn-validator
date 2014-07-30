@@ -13,11 +13,20 @@ namespace Q.BPMN.Validator.Web
 
             // Build Chain of Responsability objects
             container
-                    .RegisterType<Validation, Style0104>("Style0104",
+                    .RegisterType<Validation, BPMN0102>("BPMN0102",
                                new InjectionConstructor(new InjectionParameter<Validation>(null))
                            )
-                    .RegisterType<Validation, Style0115>("root",
-                               new InjectionConstructor(new ResolvedParameter<Validation>("Style0104"))
+                    .RegisterType<Validation, Style0123>("Style0123",
+                               new InjectionConstructor(new ResolvedParameter<Validation>("BPMN0102"))
+                           )
+                    .RegisterType<Validation, Style0122>("Style0122",
+                               new InjectionConstructor(new ResolvedParameter<Validation>("Style0123"))
+                           )
+                    .RegisterType<Validation, Style0115>("Style0115",
+                               new InjectionConstructor(new ResolvedParameter<Validation>("Style0122"))
+                           )
+                    .RegisterType<Validation, Style0104>("root",
+                               new InjectionConstructor(new ResolvedParameter<Validation>("Style0115"))
                            );
 
 

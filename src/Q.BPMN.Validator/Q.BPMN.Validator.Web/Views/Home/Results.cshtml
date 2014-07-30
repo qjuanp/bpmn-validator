@@ -1,0 +1,111 @@
+﻿@model Q.BPMN.Validator.Contexts.ValidationContext
+@using Q.BPMN.Validator.Models;
+
+@{
+    ViewBag.Title = "Results";
+}
+
+<h2>Results</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Model.XPDLVersion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model.XPDLVersion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model.Description)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model.Version)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model.Version)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.FileName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FileName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsValid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsValid)
+        </dd>
+
+    </dl>
+</div>
+@if (!Model.IsValid)
+{
+    <div>
+        <h2 class="sub-header">Error details</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Id</th>
+                        <th>Element Id</th>
+                        <th>Element Name</th>
+                        <th>Element XPath</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ValidationError error in Model.Errors)
+                    {
+                        <tr>
+                            <td>@error.Type.ToString()</td>
+                            <td>@error.Id</td>
+                            <td>@error.ElementId</td>
+                            <td>@error.ElementName</td>
+                            <td>@error.ElementXPath</td>
+                            <td>@error.Message</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+}
+else{
+    <div class="jumbotron">
+        <h1>Congratulations!</h1>
+        <p>You have a valid XPDL!</p>
+    </div>
+}

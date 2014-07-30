@@ -39,6 +39,8 @@ namespace Q.BPMN.Validator.Web.Controllers
                     context = validator.Validate(file.FileName, document);
 
                     Debug.WriteLine(context.Model.ToString());
+
+                    return View("Results", context);
                 }
             }
             return View("Index");

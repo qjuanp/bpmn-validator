@@ -6,9 +6,9 @@ BPMN Validator
 View live demo at: http://bpmn-validator.azurewebsites.net/
 
 ##Tasks
-- [ ] Analyse the problem
+- [X] Analyse the problem
     - [X] Review xml scheme
-    - [ ] Review xml errors
+    - [X] Review xml errors
 - [X] Static design
 - [X] Select best design patter for the solution
 - [X] Choose technologies
@@ -16,19 +16,20 @@ View live demo at: http://bpmn-validator.azurewebsites.net/
 - [ ] Implement Solution
     - [X] Implement file uploader
     - [X] Process XML
-    - [ ] Update class diagram
-    - [ ] Detect BPMN errors
+    - [X] Update class diagram
+    - [X] Detect BPMN errors
     - [X] Detect Style errors
-    - [ ] Test validation outputs
+    - [X] Writes results in web page
+    - [X] Test validation outputs
     - [ ] Integrate cooler file uploader
-    - [ ] Implement better styles for results
+    - [X] Implement better styles for results
     - [ ] Implement multiple file processing
-    - [ ] Test validation outputs
+    - [X] Test validation outputs
 - [X] Deploy on Azure
     - [X] Create Web Site
     - [X] Configure continuous deployment (Continuous delivery)
-- [ ] Test
-    - [ ] Validate all files and posible errors
+- [X] Test
+    - [X] Validate all files and posible errors
 
 ##Validations supported
 - [X] Style 0104.  Two activities in the same process should not have the same name.  (Use global activity to reuse a single activity in a process.) [1][1]
